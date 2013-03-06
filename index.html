@@ -1,20 +1,12 @@
-<html>
-  
-  <head></head>
-  <title>test</title>
-  <body>
-    just a test.
-    if you see this, it means the site is ok!
-    <br/>
-    忠义无贵贱，大义在我心。<br/>
-    市井之区，邦之经脉，细细把之，可得国命。<br/>
+---
+layout: default
+title: my blog
+---
 
-    <hr/>
-    有人类文明，便有了贫穷，贫穷不会消除。
-    财富意味着资源，地球的资源是一定的，创造富裕，就意味着创造贫穷，贫富差距愈来愈大。
-    如何摆脱贫穷。财富的重新分配。
-    贫穷意味着一直贫穷，富裕意味着一直富裕？财富的庇佑
-
-  </body>
-
-</html>
+<h2>{{page.title}}</h2>
+<p>new posts</p>
+<ul>
+{% for post in site.posts %}
+    <li>{{post.date | date_to_string}}<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+{% end for %}
+</ul>
