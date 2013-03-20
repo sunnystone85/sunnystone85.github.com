@@ -57,22 +57,22 @@ create a file named ibm_db2.ini in /etc/php5/apache2/conf.d
 ### add content
     <?php
         $database = 'SAMPLE';
-	$user = 'db2inst1';
-	$password = '<pwd>';
-	$conn = db2_connect($database, $user, $password);
-	if ($conn) {
-	    echo "<h2>Employee Names</h2>\n";
-	    $sql = "SELECT * FROM DB2INST1.EMP";
-	    $stmt = db2_exec($conn, $sql, array('cursor'=> DB2SCROLLABLE));
-	    echo "<table>\n";
-	    echo "<tr><th>First</th><th>Middle</th><th>Last</th></tr>";
-	    while ($row = db2_fetch_array($stmt)) {
-	        echo "\t<tr><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><tr>\n";
-	    }
-	    echo "</table>/n";
-	    db2_close($conn);
-	} else {
+        $user = 'db2inst1';
+        $password = '<pwd>';
+        $conn = db2_connect($database, $user, $password);
+        if ($conn) {
+            echo "<h2>Employee Names</h2>\n";
+            $sql = "SELECT * FROM DB2INST1.EMP";
+            $stmt = db2_exec($conn, $sql, array('cursor'=> DB2SCROLLABLE));
+            echo "<table>\n";
+            echo "<tr><th>First</th><th>Middle</th><th>Last</th></tr>";
+            while ($row = db2_fetch_array($stmt)) {
+                echo "\t<tr><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><tr>\n";
+            }
+            echo "</table>/n";
+            db2_close($conn);
+        } else {
             echo "Connection failed.";
-	}
+        }
     ?>
 over.
