@@ -1,5 +1,5 @@
 ---
-loyout: post
+layout: post
 category: memo
 tagline: install db2 on ubuntu
 tags : [db2, ubuntu]
