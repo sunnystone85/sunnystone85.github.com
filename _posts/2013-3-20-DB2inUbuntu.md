@@ -45,6 +45,8 @@ tags : [db2, ubuntu]
 ### install php dev
     sudo apt-get install php5-dev
 ### install ibm_db2
+    sudo apt-get install build-essential
+build-essential is a package which contains stuff needed for building software. (make, gcc ..)
     sudo pecl install ibm_db2
 input the db2 server path (/home/db2inst1/sqllib)
 ### set apache2
