@@ -8,7 +8,8 @@ tags: [sugarcrm, searchform, opitons, default_empty]
 ## 页面显示配置
 ### 需要的文件(已ibm_RevenueLineItems为例)
 #### a. modules/ibm_RevenueLineItems/vardefs.php 
-定义所有的field，其中定义了所有对应的数据库表和字段：
+定义所有的field，其中定义了所有对应的数据库表和字段:
+
     $dictionary['ibm_RevenueLineItems'] = array(
         'table'=>'ibm_revenuelineitems',
         'audited'=>true,
@@ -34,7 +35,8 @@ tags: [sugarcrm, searchform, opitons, default_empty]
                     'enable_range_search' => false,            // 是否支持范围查找开关
                 ),
 #### b. modules/ibm_RevenueLineItems/metadata/searchdefs.php
-定义页面要显示的元素以及布局，要跟vardefs.php中的field对应：
+定义页面要显示的元素以及布局，要跟vardefs.php中的field对应:
+
     $module_name = 'ibm_RevenueLineItems';
     $searchdefs[$module_name] = array(
         'templateMeta' => array(
