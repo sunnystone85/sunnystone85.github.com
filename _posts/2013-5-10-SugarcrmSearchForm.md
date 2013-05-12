@@ -1,8 +1,8 @@
 ---
-layout:post
-category:sugarcrm
-tagline:SearchForm 配置
-tags:[sugarcrm, searchform, opitons, default_empty]
+layout: post
+category: sugarcrm
+tagline: SearchForm 配置
+tags: [sugarcrm, searchform, opitons, default_empty]
 ---
 {% include JB/setup %}
 ## 页面显示配置
