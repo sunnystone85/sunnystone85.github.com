@@ -1,5 +1,5 @@
 ---
-layout: _post
+layout: post
 tagline: git 常用命令记录
 category: memo
 tags: [git]
