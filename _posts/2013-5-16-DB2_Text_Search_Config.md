@@ -42,3 +42,7 @@ tags: [Text Search, DB2, config]
     -adminHTTPPort 46000
 
     configTool printAll -configPath /db2/testdb/sqllib/db2tss/config
+
+
+### the link
+    http://publib.boulder.ibm.com/infocenter/db2luw/v9r5/index.jsp?topic=%2Fcom.ibm.db2.luw.admin.ts.doc%2Fdoc%2Ft0052968.html
